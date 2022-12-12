@@ -1,0 +1,245 @@
+/************************************************************/
+/* Theme:          Box Desing Component  Styles Zurich.com  */
+/* Browser:        IE 5+, NS 6.01+                          */
+/* Author:         Gerhard Schauer / Ludmila Kukal          */
+/* Created:        2003/11/25                               */
+/* Last Modified:                                           */
+/* By:                                                      */
+/************************************************************/
+/************************************************************/
+/* General Styles for all Box Design components             */
+/************************************************************/
+
+#box{
+	font-family: Arial,Helvetica,sans-serif;
+	/*margin:0px 10px 0px 10px;*/
+	}
+#box h2 {
+	margin: 0px;
+	font-size: 110%;
+	font-weight: normal;
+	line-height: 1.0em;	
+	padding: 6px 0px 0px 7px;
+	color: #003399;
+}
+#box h3 {
+	margin: 0px;
+	font-size: 75%;
+	font-weight: bold;
+	line-height: 1.0em;	
+	padding: 6px 7px 1px 8px;
+	color: #666;
+}
+#box p {
+	font-size: 75%;
+	line-height: 1.3em;
+	padding: 3px 7px 5px 7px;
+	margin:  0px;
+}
+#box ul{
+	margin: 0px;
+	padding: 0px 0px 0px 24px;
+	line-height: 1em;
+	list-style-image :  url(../../Documents%20and%20Settings/ggutierr/Local%20Settings/Temporary%20Internet%20Files/Content.IE5/img/box_bullet.gif);
+}
+#box li{
+	font-size: 75%;
+	padding: 3px 0px 3px 0px;
+}
+#box a:link {color:#039!important;text-decoration:none;}
+#box a:visited {color:#666!important;text-decoration:none;}
+#box a:hover {color:#039!important;text-decoration:underline;}
+#box a span {text-decoration:underline;font-family:verdana;}
+.imgBoxB {float: left; padding:3px 2px 3px 3px;}
+.txtRight {
+	float:left;
+}
+.smallText{
+	font-size: 70% !important;
+	padding: 3px 7px 3px 8px !important;
+}
+.smallTitle{
+	font-size: 80% !important;
+	font-weight: bold !important;	
+	line-height: 1.1em !important;
+	padding: 7px 7px 1px 7px !important;
+}
+.smallList{
+	font-size: 70% !important;
+	padding: 3px 0px 0px 0px !important;
+}
+#box select {font-size: 70%;}
+#box input.button {
+	border: 0px;
+	margin: 0px 0px 2px 1px;
+	padding: 0px 6px 0px 6px;
+	color: #fff;
+	background-color: #8899BB;
+	font-size: 70%;
+	height: 16px;
+}
+.box505{
+	border: 1px solid #ddd;
+	width: 505px;
+	}
+.box480{
+	border: 1px solid #ddd;
+	width: 480px;
+	}
+.box425{
+	border: 1px solid #ddd;
+	width: 425px;
+	}
+.box365{
+	border: 1px solid #ddd;
+	width: 365px;
+	}
+.box250{
+	border: 1px solid #ddd;
+	width: 250px;
+	}
+.box225{
+	border: 1px solid #ddd;
+	width: 225px;
+	}
+.box210{
+	border: 1px solid #ddd;
+	width: 210px;
+	}
+.box150{
+	border: 1px solid #ddd;
+	width: 150px;
+	}
+.boxBgStone, .boxBgWhite {
+	border: 1px solid #fff;
+}
+.boxBgWhite45, .boxBgLightGrey45, .boxBgMidGrey45, .boxBgLightBlue45, .boxBgStone45 {
+	border: 1px solid #fff;
+	height: 43px;
+}
+.boxBgWhite46, .boxBgLightGrey46, .boxBgMidGrey46, .boxBgLightBlue46, .boxBgStone46 {
+	border: 1px solid #fff;
+	height: 44px;
+}
+.boxBgWhite96, .boxBgLightGrey96, .boxBgMidGrey96, .boxBgLightBlue96, .boxBgStone96 {
+	border: 1px solid #fff;
+	height: 94px;
+}
+.boxBgWhite197, .boxBgLightGrey197, .boxBgMidGrey197, .boxBgLightBlue197, .boxBgStone197 {
+	border: 1px solid #fff;
+	height: 195px;
+}
+.boxBgWhite298, .boxBgLightGrey298, .boxBgMidGrey298, .boxBgLightBlue298, .boxBgStone298 {
+	border: 1px solid #fff;
+	height: 296px;
+}
+.boxBgWhite399, .boxBgLightGrey399, .boxBgMidGrey399, .boxBgLightBlue399, .boxBgStone399 {
+	border: 1px solid #fff;
+	height: 397px;
+}
+.boxTitleBgWhite, .boxTitleBgLightGrey, .boxTitleBgMidGrey, .boxTitleBgLightBlue, .boxTitleBgStone {
+	height:16px;
+	font-weight: bold !important;
+	font-size: 75% !important;	
+	padding: 3px 0px 0px 8px !important;
+	margin: 0px 0px 3px 0px !important;
+}
+.boxBgWhite45, .boxBgWhite46, .boxBgWhite96, .boxBgWhite197, .boxBgWhite298, .boxBgWhite399, .boxTitleBgWhite {background-color: #fff;}
+.boxBgLightGrey45, .boxBgLightGrey96, .boxBgLightGrey96, .boxBgLightGrey197, .boxBgLightGrey298, .boxBgLightGrey399, .boxTitleBgLightGrey {background-color: #f6f6f6;}
+.boxBgMidGrey45, .boxBgMidGrey46, .boxBgMidGrey96, .boxBgMidGrey197, .boxBgMidGrey298, .boxBgMidGrey399, .boxTitleBgMidGrey  {background-color: #ddd;}
+.boxBgLightBlue45, .boxBgLightBlue46, .boxBgLightBlue96, .boxBgLightBlue197, .boxBgLightBlue298, .boxBgLightBlue399, .boxTitleBgLightBlue {background-color: #cde;}
+.boxBgStone, .boxBgStone45, .boxBgStone46, .boxBgStone96, .boxBgStone197, .boxBgStone298, .boxBgStone399, .boxTitleBgStone {background-color: #eed;}
+.boxLeft {float:left;width:49%;}
+.boxRight {
+	float: right;
+	text-align: left;
+	width /**/:49%;
+}
+
+.principalmain{
+			height:40px;
+			font-size: 100% !important;	
+            text-align:center;
+      		font-family: 'Helvetica Neue', Helvetica, sans-serif;
+            color: #FFF;
+            background: #0090FF;
+            padding: 6px 30px;
+            white-space: nowrap;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            margin: 10px 5px;
+            -webkit-transition: all 0.2s ease-in-out;
+            -ms-transition: all 0.2s ease-in-out;
+            -moz-transition: all 0.2s ease-in-out;
+            -o-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
+}
+
+.impar{
+	height: 40%;
+	background: #D2DAD5;
+	/*transition:all 1s ;*/
+	text-align: center;
+	
+}
+.par{
+		height: 40%;
+	background: #E7E7E7;
+	text-align: center;
+	
+}
+.impar:hover{
+	background: #414141;
+	color: white;
+
+}
+.par:hover{
+	background: #414141;
+	color: white;
+
+}
+#strapLine{
+	font-family: Arial,Helvetica,sans-serif;
+	margin: 5px 10px 5px 10px;
+	width: 735px;
+	vertical-align: top
+}
+#strapLine a:link, #strapLine a:visited, #strapLine a:active {
+	color: #666;
+	text-decoration: none;
+}
+#strapLine a:hover{
+	text-decoration: underline;
+}
+#strapLine a span {
+	text-decoration: underline;
+}
+#strapLine p{
+	font-size: 75%;
+	line-height: 1.3em;
+	padding: 3px 7px 5px 10px;
+	margin:  0px;
+}.legal1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 22px;
+	color: #003399;
+}
+.legal2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #003399;
+}
+.legal3 {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #003399;
+}
+.legal {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	line-height: 18px;
+
+}
