@@ -1,10 +1,10 @@
 <?php
 require("../includes/funciones.php");
 require("../includes/sqlcommand.inc");	
-/*ini_set('display_errors', 1);
+ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
-*/
+
 
 $dia_numero= date("d");
 $dia_letras = date('D');
