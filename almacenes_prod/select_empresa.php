@@ -147,7 +147,7 @@ desconectardb($almacen);
 											conectardb($almacen);											
 											$qry_tipo_empresa="SELECT * FROM cat_empresa WHERE activo=1";										
 											$res_qry_tipo_empresa=$query($qry_tipo_empresa);
-											
+											print_r($res_qry_tipo_empresa);
 											echo('<select name="cbo_tipo_empresa" style="width:300px;">');
 											$nombre=":: Seleccione ::";
 											//echo'<option value="0">'.$nombre.'</option>';
