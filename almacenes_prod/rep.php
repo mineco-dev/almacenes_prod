@@ -310,7 +310,7 @@ on k.id_dependencia = d.iddireccion
 	$SaldoControlInicial = $rowControl[7];
  }*/
 
- $queryControl = "use almacen_nuevo
+ $queryControl = "use almacen_nuevo_qa
 select  
 k.saldo, 
 k.costo_promedio,
@@ -332,7 +332,7 @@ $PromedioControlInicial = $rowControl[1];
 $SaldoControlInicial = $rowControl[0];
 
 
- $query = "use almacen_nuevo
+ $query = "use almacen_nuevo_qa
 select CONVERT(nvarchar(10), k.fecha, 103) as fecha,
 CONVERT(nvarchar(10), k.fecha, 108) as hora,
  m.tipo_movimiento,

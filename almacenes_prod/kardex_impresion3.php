@@ -41,7 +41,7 @@ td.style.backgroundColor="#FFFFFF";
   </tr>
     <?PHP
 conectardb($almacen);	
-	$Fields="use almacen_nuevo 
+	$Fields="use almacen_nuevo_qa 
 		select producto
 			 from cat_producto
 				where 
@@ -58,7 +58,7 @@ conectardb($almacen);
 	?>
     <?PHP 	
 	conectardb($almacen);
-	$Fields2="use almacen_nuevos elect 
+	$Fields2="use almacen_nuevo_qas elect 
 saldo
 from tb_kardex
 where 
@@ -72,7 +72,7 @@ and codigo_tipo_movimiento = 1)";
 	
 	
 	
-	/*"use almacen_nuevo 
+	/*"use almacen_nuevo_qa 
 			select *
  				from tb_kardex
 				where 
@@ -160,7 +160,7 @@ and codigo_tipo_movimiento = 1)";
       <tr>
         <td><?		
 	conectardb($almacen);
-	$query_kardex_2 = "use almacen_nuevo 
+	$query_kardex_2 = "use almacen_nuevo_qa 
 	select 
 	Count(d.nombre) as filas
 	from tb_kardex k
@@ -213,7 +213,7 @@ and codigo_tipo_movimiento = 1)";
 					$subcategoria=$_SESSION["subcategoria"];	
 
 conectardb($almacen);
-$query_kardex = "use almacen_nuevo 
+$query_kardex = "use almacen_nuevo_qa 
 select CONVERT(nvarchar(10), k.fecha, 103) as fecha,
 m.tipo_movimiento,
 k.no_despacho, 

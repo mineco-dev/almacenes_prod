@@ -3,7 +3,7 @@
 
 // class Conexion{
 
-//     private $name_db = "almacen_nuevo";
+//     private $name_db = "almacen_nuevo_qa";
 //     private $server = '128.5.8.85';
 //     private $user = 'dev';
 //     private $password = '12345678';
@@ -16,7 +16,7 @@
 
     function Conectar(){
         echo "hola";
-        $name_db = "almacen_nuevo";
+        $name_db = "almacen_nuevo_qa";
         $server = '128.5.8.85';
         $user = 'dev';
         $password = '12345678';

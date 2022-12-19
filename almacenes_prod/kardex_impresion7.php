@@ -44,7 +44,7 @@ td.style.backgroundColor="#FFFFFF";
   </tr>
     <?PHP
 conectardb($almacen);	
-	$Fields="use almacen_nuevo 
+	$Fields="use almacen_nuevo_qa 
 		select producto
 			 from cat_producto
 				where 
@@ -61,7 +61,7 @@ conectardb($almacen);
     	
 	<?PHP
 	
-	$Fields2="use almacen_nuevo
+	$Fields2="use almacen_nuevo_qa
 	select 
 	saldo
 	from tb_kardex
@@ -239,7 +239,7 @@ conectardb($almacen);
 					$categoria=$_SESSION["categoria"];	
 					$subcategoria=$_SESSION["subcategoria"];	
 conectardb($almacen);
-$query_kardex = "use almacen_nuevo 
+$query_kardex = "use almacen_nuevo_qa 
 select top 62 CONVERT(nvarchar(10), k.fecha, 103) as fecha,
 m.tipo_movimiento,
 k.no_despacho, 
