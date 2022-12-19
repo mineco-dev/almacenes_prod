@@ -1,4 +1,0 @@
-function imprimir() {
-    window.print();
-}
-

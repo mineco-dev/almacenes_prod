@@ -1,4 +1,4 @@
-<?PHP
+<?
 $clase = "boxTitleBgLightGrey";
 if ($i % 2 == 0) 
 {

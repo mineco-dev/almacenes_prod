@@ -1,0 +1,103 @@
+
+.menu{
+    
+    font-weight: 200;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 8px;
+    border: 1px solid #CCC;
+    float: left;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 15 15 15 15;
+    margin-left: 5px;
+}
+
+
+.menu:hover{
+	color: #1883ba;
+    background-color: #ffffff;
+ 	text-decoration: none;
+ 	border: 1px solid #000;
+}
+
+ul, ol {
+	list-style: none;
+}
+table {
+	table-layout: auto;
+	border-collapse: separate;
+	border-spacing: 0;
+	empty-cells: hide;
+}
+
+
+.Titulo {
+	font-family: Arial, Tahoma, Verdana;
+	font-size: 35px;
+	font-style: italic;
+	color: #000066;
+	font-weight: bold;
+}
+
+
+.Main{
+
+	width: 20%;
+	height: 100%;
+	float: left;
+}
+
+.cuerpologin{
+	width: 100%;
+}
+.dependencia{
+	width: 50%;
+	text-align: center;
+	height: 70px;
+	background: #1883ba	;
+	font-size: 1.2em;
+	color: #fff;
+}
+
+.contenedorLogin{
+	width: 100%;
+	height: 70%;
+	margin-top: 30px;
+	
+
+
+}
+
+
+.footer{
+	width: 100%;
+	height: 10%;
+	text-align: center;
+
+}
+
+.footer ul li{
+	display: inline-block;
+	margin: 15px;
+	padding: 10px;
+	font-size: 1.5em;
+
+
+}
+
+
+
+
+.lista{
+color: #000;
+cursor: default;
+}
+
+
+
+
+
+/*MENU LOGIN*/
+
+/* FIN LOGIN*/

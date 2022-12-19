@@ -1,3 +1,0 @@
-var number = 3500;
-
-alert(new Intl.NumberFormat().format(number))

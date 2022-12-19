@@ -1,7 +1,7 @@
 <!-------------------------------------------------Inicio del encabezado del reporte------------------------------------------------->
 <?		
 	require("../includes/funciones.php");
-	require("../includes/sqlcommand.inc");
+	require("../includes/sqlcommand.inc");	
 ?>
 <!DOCTYPE html>
 
@@ -32,9 +32,9 @@ span.green {color:darkolivegreen;font-weight:bold}
   <tr>
     <td width="1155" height="51"></td>
   </tr>
-  <?PHP
+  <?
 conectardb($almacen);	
-	$Fields="use almacen_nuevo 
+	$Fields="use almacen
 		select producto
 			 from cat_producto
 				where 
@@ -49,9 +49,9 @@ conectardb($almacen);
 			//print($producto);
 		}
 	?>
-  <?PHP 	
+  <? 	
 	conectardb($almacen);
-	$Fields2="use almacen_nuevo select 
+	$Fields2="use almacen select 
 				saldo
 				from tb_kardex
 				where 
@@ -109,11 +109,11 @@ conectardb($almacen);
 		
 		?>
         </td>
-        <td width="617" style="font-size:10px; font-family:arial;"><?PHP echo $nombre_producto; ?></td>
+        <td width="617" style="font-size:10px; font-family:arial;"><? echo $nombre_producto; ?></td>
         <!--imprime nombre de producto-->
         <!--<td width="4">&nbsp;</td> 
     		<td width="6">&nbsp;</td>-->
-        <td width="75" style="font-size:12px; font-family:arial;" ><?PHP echo $saldo; ?> </td>
+        <td width="75" style="font-size:12px; font-family:arial;" ><? echo $saldo; ?> </td>
         <!--imprime nombre del producto-->
       </tr>
     </table></td>
