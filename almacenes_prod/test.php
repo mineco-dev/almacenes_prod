@@ -40,7 +40,7 @@
 $serv ='server_appl';
 $usr ='sa';
 $pwd ='Sup3rus3r2009';
-$bd ='almacen';
+$bd ='almacen_nuevo_qa';
 //ini_set('mssql.charset', 'UTF-8');			  
 mssql_connect($serv,$usr,$pwd);
 mssql_select_db($bd);

@@ -21,7 +21,7 @@ $inicio = ($pagina - 1) * $TAMANO_PAGINA;
 //miro a ver el número total de campos que hay en la tabla con esa búsqueda  
 ////ini_set('mssql.charset', 'UTF-8');
 $db = mssql_connect('server_appl','sa','Sup3rus3r2009');
-mssql_select_db('almacen',$db);
+mssql_select_db('almacen_nuevo_qa',$db);
 $ssql = "select * from tb_kardex where codigo_bodega = 8 and
 codigo_categoria = 241
 and codigo_subcategoria = 600

@@ -1,10 +1,15 @@
 <?php
+
 require "../includes/sqlcommand.inc";
 require '../includes/funciones.php';
 /*ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 */
+echo '<hr/>';
+echo 'almacen: ';
+echo $almacen;
+echo '<hr/>';
 $usuario_id = ($_SESSION["user_id"]); //codigo del usuario
 $grupo_id = ($_SESSION["group_id"]); // Codigo del grupo
 $usuario_nombre = $_SESSION["user_name"];

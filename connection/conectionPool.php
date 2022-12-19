@@ -16,7 +16,7 @@
 
     function Conectar(){
         echo "hola";
-        $name_db = "almacen_nuevo_qa_qa";
+        $name_db = "almacen_nuevo_qa";
         $server = '128.5.8.85';
         $user = 'dev';
         $password = '12345678';
