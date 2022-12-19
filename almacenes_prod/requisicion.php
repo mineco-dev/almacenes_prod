@@ -8,7 +8,7 @@ error_reporting(E_ALL);
 */
 echo '<hr/>';
 echo 'almacen: ';
-echo $almacen;
+print_r($almacen);
 echo '<hr/>';
 $usuario_id = ($_SESSION["user_id"]); //codigo del usuario
 $grupo_id = ($_SESSION["group_id"]); // Codigo del grupo

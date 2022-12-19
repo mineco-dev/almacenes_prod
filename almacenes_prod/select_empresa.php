@@ -9,7 +9,7 @@ error_reporting(E_ALL);
 $dia_numero= date("d");
 $dia_letras = date('D');
 
-
+print_r($_SESSION);
 //dd($almacen);
 
 conectardb($almacen);											
@@ -22,7 +22,7 @@ while($row_tipo_empresa=$fetch_array($res_qry_tipo_empresa))
 {
 	$contador = $row_tipo_empresa["id_fecha"];
 					// $valida =$row_tipo_empresa["dia"];
-	$valida =13;
+	$valida =20;
 
 }
 
@@ -39,7 +39,7 @@ if($dia_numero >= 1  && $dia_letras != "Sun" && $dia_letras != "Sat")
 
 	$contador= $contador +1;
 	
-	if($contador <= 13)
+	if($contador <= 20)
 
 	{
 
@@ -147,7 +147,7 @@ desconectardb($almacen);
 											conectardb($almacen);											
 											$qry_tipo_empresa="SELECT * FROM cat_empresa WHERE activo=1";										
 											$res_qry_tipo_empresa=$query($qry_tipo_empresa);
-											print_r($res_qry_tipo_empresa);
+											
 											echo('<select name="cbo_tipo_empresa" style="width:300px;">');
 											$nombre=":: Seleccione ::";
 											//echo'<option value="0">'.$nombre.'</option>';
