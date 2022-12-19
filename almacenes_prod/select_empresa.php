@@ -10,7 +10,7 @@ $dia_numero= date("d");
 $dia_letras = date('D');
 
 
-
+dd($almacen);
 
 conectardb($almacen);											
 $qry_tipo_empresa="SELECT * FROM dbo.fecha";										
