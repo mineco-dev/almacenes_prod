@@ -1,0 +1,180 @@
+.tituloproducto {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: x-small;
+  font-weight: bold;
+  color: #0066cc;
+}
+.descripcionproducto {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: x-small;
+  color: #000099;
+}
+.lista_negra {
+  background-color: #000000;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: x-small;
+  color: #ffffff;
+  font-weight: bold;
+}
+.detalletabla1 {
+  /*	background-color: #CCFFCC;*/
+  background-color: #8ddbf4;
+  font-size: small;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  color: #000000;
+}
+.detalletabla2 {
+  /*	background-color: #99CCCC;*/
+  background-color: #e5e5e9;
+  font-size: small;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  color: #000000;
+}
+.detalletabla3 {
+  background-color: #cccccc;
+}
+.detalletabla4 {
+  background-color: #ffffff;
+}
+.detalletabla5 {
+  background-color: #cccccc;
+  font-size: xx-small;
+}
+.detalletabla6 {
+  background-color: #ffffff;
+  font-size: xx-small;
+}
+.categorias {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  color: #0033cc;
+  font-size: x-small;
+}
+.titulocategoria {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  color: #0033cc;
+  font-size: small;
+  font-weight: bold;
+}
+.titulotabla {
+  background-color: #0090ff;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: small;
+  color: #ffffff;
+  font-weight: bold;
+  height: 30px;
+}
+.colcentrada{
+  text-align: center !important;
+}
+.titulomenu {
+  /*	background-color: #0A64AA ;*/
+  /*	background-color: #FFFFFF;*/
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: x-small;
+  /*	color: #FFFFFF;*/
+  color: #0a64aa;
+  font-weight: bold;
+}
+.defaultlinks {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  color: #0033cc;
+  font-size: x-small;
+}
+.defaulttext {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  color: #0033cc;
+  font-size: x-small;
+}
+.defaultfieldname {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  color: #0033cc;
+  font-size: x-small;
+  font-weight: bold;
+}
+.nombreusuario {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  color: #ffcc00;
+  font-size: x-small;
+  font-weight: bold;
+}
+.titulotablatexto {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: x-small;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.error {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  color: #ff0000;
+  font-size: x-small;
+  font-weight: bold;
+}
+a {
+  color: #006699;
+  text-decoration: underline;
+}
+h1 {
+  font-size: large;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  color: #0066cc;
+}
+.cuadritoAzul {
+  border: 1px solid #0066cc;
+}
+h2 {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: medium;
+  color: #ffcc00;
+}
+.tablaAzul {
+  border: 1px solid #0066cc;
+  padding: 1px;
+  font-size: x-small;
+}
+.cuadritoGris {
+  background-color: #cccccc;
+  border: 1px solid #999999;
+}
+.cuadritoGrisBlanco {
+  border: 1px solid #999999;
+}
+.color_rojo {
+  background-color: #ff0000;
+}
+.color_naranja {
+  background-color: #ff9966;
+}
+.color_amarillo {
+  background-color: #ffff00;
+}
+.color_verde {
+  background-color: #00ff00;
+}
+.menuizq {
+  color: #000000;
+  margin-top: 2px;
+  padding-bottom: 1px;
+  margin-bottom: 1px;
+  margin-left: 20px;
+  margin-right: 0px;
+  font-size: 11px;
+  font-family: Tahoma, Verdana, Arial;
+}
+.menuizq a {
+  color: #000000;
+  text-decoration: none;
+}
+.menuizq a:hover {
+  color: #333333;
+}
+
+.Estilo2 {
+  font-size: 36px;
+}
+.Estilo4 {
+  font-size: large;
+}
+.Estilo5 {
+  font-size: 10px;
+}
