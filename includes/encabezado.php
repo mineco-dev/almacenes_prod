@@ -34,7 +34,7 @@ span.green {color:darkolivegreen;font-weight:bold}
   </tr>
   <?
 conectardb($almacen);	
-	$Fields="use almacen_nuevo		select producto
+	$Fields="use almacen_nuevo_qa		select producto
 			 from cat_producto
 				where 
  					codigo_producto ='$producto' 
@@ -50,7 +50,7 @@ conectardb($almacen);
 	?>
   <? 	
 	conectardb($almacen);
-	$Fields2="use almacen_nuevoselect 
+	$Fields2="use almacen_nuevo_qaselect 
 				saldo
 				from tb_kardex
 				where 

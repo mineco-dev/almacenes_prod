@@ -99,7 +99,7 @@ span.green {color:darkolivegreen;font-weight:bold}
 
  conectardb($almacen);
  
- $query = "use almacen_nuevo 
+ $query = "use almacen_nuevo_qa 
 select CONVERT(nvarchar(10), k.fecha, 103) as fecha,
 CONVERT(nvarchar(10), k.fecha, 108) as hora,
  m.tipo_movimiento,

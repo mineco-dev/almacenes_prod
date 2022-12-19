@@ -7,7 +7,7 @@
 	$myserver="128.5.8.85"; 
 	$myuser="dev";
 	$mypass="12345678";
-	$mydb="helpdesk_nuevo";
+	$mydb="helpdesk_nuevo_qa";
 
 
 $s=mssql_connect($myserver, $myuser, $mypass) or die ("no se pudo conectar al servidor" .mssql_get_last_message());
