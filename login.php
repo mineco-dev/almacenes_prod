@@ -152,7 +152,7 @@
        $nombre=($_SESSION["name"]);
        echo "<div align='center' style='position: fixed; top: 0px; right: 0px;font-size:12px'> Bienvenido: $nombre <br><i class=\"fa fa-sign-out\" aria-hidden=\"true\"></i>
 <a href='logout.php' target='_parent' >SALIR</a></span><br><i class=\"fa fa-pencil-square-o\" aria-hidden=\"true\"></i>
-<a href='almacen/cambio_password.php' target='_parent'>Cambiar Contrase�a</a></div>";	
+<a href='almacenes_prod/cambio_password.php' target='_parent'>Cambiar Contrase�a</a></div>";	
        echo "";
        $dia_numero= date("d");
        $dia_letras = date('D');

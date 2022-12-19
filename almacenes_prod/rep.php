@@ -277,8 +277,7 @@ table th{
 
  conectardb($almacen);
 	
-  /*$queryControl = "use almacen
-select CONVERT(nvarchar(10), k.fecha, 103) as fecha,
+  /*$queryControl = "use almacen_nuevo_qaselect CONVERT(nvarchar(10), k.fecha, 103) as fecha,
 CONVERT(nvarchar(10), k.fecha, 108) as hora,
  m.tipo_movimiento,
 k.no_despacho, 
