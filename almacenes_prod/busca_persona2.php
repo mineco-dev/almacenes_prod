@@ -183,7 +183,7 @@ function Refrescar(form)
 				if ($_REQUEST["txt_buscar"]!="")
 				{
 				$busqueda=strtoupper($_REQUEST["txt_buscar"]);					
-				$consulta = "use helpdesk_nuevo_qa
+				$consulta = "use helpdesk_nuevo
 select (u.nombres +' '+ u.apellidos) as nombre, u.codigo_usuario from usuario u
 							where (u.nombres like '%$busqueda%' or u.apellidos like '%$busqueda%') and (u.activo=1)";
 
@@ -194,17 +194,17 @@ select (u.nombres +' '+ u.apellidos) as nombre, u.codigo_usuario from usuario u
 					$inicial=$_REQUEST["in"];
 					echo "Listado de personal que su apellido inicia con $inicial";
 					if ($inicial!="all")
-						$consulta = "use helpdesk_nuevo_qa
+						$consulta = "use helpdesk_nuevo
 select (u.nombres +' '+ u.apellidos) as nombre, u.codigo_usuario from usuario u where u.apellidos like '$inicial%' and u.activo=1";
 							       
 						else
-							$consulta = "use helpdesk_nuevo_qa
+							$consulta = "use helpdesk_nuevo
 select (u.nombres +' '+ u.apellidos) as nombre, u.codigo_usuario from usuario u where u.activo = 1
 order by nombres";
 				}
 				else
 				{
-					$consulta =     "use helpdesk_nuevo_qa
+					$consulta =     "use helpdesk_nuevo
 select (u.nombres +' '+ u.apellidos) as nombre, u.codigo_usuario from usuario u 
 
 							     	where u.apellidos like 'a%' and u.activo=1";

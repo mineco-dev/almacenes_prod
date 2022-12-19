@@ -32,11 +32,11 @@ $queryNew = "
   FROM tb_requisicion_enc e
     INNER JOIN direccion d
         ON d.iddireccion = e.codigo_dependencia
-    INNER JOIN [helpdesk_nuevo_qa].dbo.usuario usu
+    INNER JOIN [helpdesk_nuevo].dbo.usuario usu
         ON usu.nombre_usuario = e.usuario_aprobo
     INNER JOIN Tb_Jefes_Depen jefe
         ON jefe.codigo_usuario = e.codigo_jefe_dependencia
-    INNER JOIN [helpdesk_nuevo_qa].dbo.usuario u
+    INNER JOIN [helpdesk_nuevo].dbo.usuario u
         ON u.nombre_usuario = e.usuario_autorizo
   WHERE e.codigo_requisicion_enc = $hoja_despacho and jefe.Codigo_Dependencia = e.codigo_dependencia";
 
