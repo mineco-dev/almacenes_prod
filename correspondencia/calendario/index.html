@@ -1,0 +1,72 @@
+
+
+
+<html>
+  <head>
+    <title>ASEGGYS 2.0 - SISTEMA ALMACEN MINECO</title>
+    
+  </head>
+  <body>
+  <TABLE>
+  	<TR>
+  		<TD valign="top">Fecha1: </TD>
+  		<TD valign="top">
+<div style="display:none">
+<script type="text/javascript" src="resources/js/Fecha.js" ></script>
+<script type="text/javascript" src="resources/js/Calendario.js" ></script>
+<link rel="STYLESHEET" type="text/css" href="resources/css/calendario.css"></link>
+</div>
+<SPAN style='display:inline;width:100;'>
+<input readonly='true' type='Text' id="idfecha1" name="fecha1" value="" size="10" onfocus='idfecha1Calendar.showCalendar();'>
+<div id="idfecha1CalendarContiner" style='display:none;' class='calendario' ></div></SPAN>
+<script> 
+idfecha1Calendar = createCalendario( "idfecha1", "idfecha1CalendarContiner", "resources/img/", "MM-dd-yyyy", "english" );
+</script>
+
+</TD>
+  		<TD valign="top">Fecha2: </TD>
+  		<TD valign="top">
+<SPAN style='display:inline;width:100;'>
+<input readonly='true' type='Text' id="idfecha2" name="fecha2" value="" size="10" onfocus='idfecha2Calendar.showCalendar();'>
+<div id="idfecha2CalendarContiner" style='display:none;' class='calendario' ></div></SPAN>
+<script> 
+idfecha2Calendar = createCalendario( "idfecha2", "idfecha2CalendarContiner", "resources/img/", "yyyy/mm/dd", "english" );
+</script>
+
+</TD>
+  	</TR>
+  	<TR><TD valign="top">&nbsp;</TD></TR>
+  	<TR><TD valign="top">&nbsp;</TD></TR>
+	
+	 	<TR>
+	 		<TD valign="top">Fecha Ini: </TD>
+		 	<TD valign="top">
+<SPAN style='display:inline;width:100;'>
+<input readonly='true' type='Text' id="idfechaIni" name="fechaIni" value="" size="10" onfocus='idfechaIniCalendar.showCalendar();'>
+<div id="idfechaIniCalendarContiner" style='display:none;' class='calendario' ></div></SPAN>
+<script> 
+idfechaIniCalendar = createCalendario( "idfechaIni", "idfechaIniCalendarContiner", "resources/img/", "yyyymmdd", "spanish" );
+</script>
+
+</TD>
+		 	<TD valign="top">Fecha Fin: </TD>
+	 		<TD valign="top">
+<SPAN style='display:inline;width:100;'>
+<input readonly='true' type='Text' id="idfechaFin" name="fechaFin" value="" size="10" onfocus='idfechaFinCalendar.showCalendar();'>
+<div id="idfechaFinCalendarContiner" style='display:none;' class='calendario' ></div></SPAN>
+<script> 
+idfechaFinCalendar = createCalendario( "idfechaFin", "idfechaFinCalendarContiner", "resources/img/", "dd-mm-yyyy", "spanish" );
+</script>
+
+</TD>
+	 	</TR>
+    
+<SCRIPT>
+idfechaIniCalendar.setUpperLimit( idfechaFinCalendar );
+idfechaFinCalendar.setLowerLimit( idfechaIniCalendar );
+</SCRIPT>
+
+
+  </TABLE>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+create table bitaDocu(
+bd int not null primary key auto_increment,
+docu int,
+usuario int,
+hora varchar(20),
+fecha varchar(20)
+)
+
+create table segDocu(
+sd int not null primary key auto_increment,
+de int,
+a int,
+fecha date,
+hora varchar(20),
+docu int
+)
+
+
+create table bitaSeg(
+bs int not null primary key auto_increment,
+docu int,
+usuario int,
+hora varchar(20),
+fecha varchar(20),
+descr text
+)
+
+--recordar que se agrego un nuevo campo dentro de doc
+--que hace la vez del correlativo y se le quito
+--al docu que llevara el control tmp_documento

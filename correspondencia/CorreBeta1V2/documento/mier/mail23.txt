@@ -1,0 +1,16 @@
+ "select d.idDeposito, c.nombreCliente, sum(d.saldoActualValores) saldo,  "+
+					" tipo.nombreTipoOperacion, tipb.nombre sucursal, nvl(ce.tipoDeCambio,0), nvl(ce.idMoneda,1) "+
+					" from deposito d, cliente c, poliza p, tipoOperacion tipo, tipoBodega tipb, "+
+					" cliente_Poliza cp, certificado ce, moneda m "+
+					" where d.idCliente = c.idCliente and cp.idCliente = c.idCliente "+
+					" and cp.idPoliza = p.idPoliza and d.idTipoAlmacenaje = 1 "+
+					" and d.saldoActualUnidades <> 0"+
+					" and d.idDeposito = ce.idDeposito(+)"+
+					" and ce.idMoneda = m.idMoneda(+)"+
+					" and d.idTipoBodega = "+iSucursal+" and d.idTipoOperacion =  "+ tOpera +
+//					" and p.idPoliza between "+tPoliza+" and 1 "+
+					" and p.idPoliza not in (1) "+
+					" and d.idTipoBodega = tipb.idTipoBodega  and d.idTipoOperacion = tipo.idTipoOperacion "+
+					" Group by d.idDeposito, c.nombreCliente, tipo.nombreTipoOperacion, tipb.nombre,"+
+					" ce.tipoDeCambio, ce.idMoneda "+
+					" Order by d.idDeposito ";

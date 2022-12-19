@@ -1,0 +1,691 @@
+﻿body 
+{		
+	/* imagen de fondo y margenes de 0 a toda la página*/
+	background-image: url(Imagenes/Fondo.jpg);
+	margin-bottom: 0; 
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+	
+	/* agrega un scrollbar a las etiquetas div*/
+	scrollbar-face-color:#f1f4fb; 
+	scrollbar-track-color:#f1f4fb; 
+	scrollbar-shadow-color:#f1f4fb; 
+	scrollbar-arrow-color: #acbbc6;
+
+	/* estilo de letra principal para la página*/	
+	font-family: Arial;
+	font-size: 7pt;
+	font-weight: normal;  
+}
+
+.tabla
+{ 
+border-style:solid; 
+border-width: 1px; 
+border-color: #660033; 
+background-color: #FFFFFF; 
+font-family: verdana, arial; 
+font-size: 10pt; 
+} 
+
+.panel
+{ 
+border-style:solid; 
+border-width: 0px; 
+border-color: #FFFFFF; 
+background-color: #FFFFFF; 
+font-family: verdana, arial; 
+font-size: 10pt; 
+align:center;
+cellspacing:0;
+} 
+.boton2{
+font-size:10px;
+font-family:Verdana,Helvetica;
+font-weight:bold;
+color:white;
+background:#638cb5;
+border:0px;
+width:150px;
+height:15px;           
+}
+.tituloPrincipal
+{
+	/* titulos utilizados solo en la portada (NOTICIA, CAPACITACION, EVENTOS)*/
+	font-family: Verdana; color: #015584; 
+	font-size : 7pt;
+	font-weight: bold;
+}
+
+
+.Fecha
+{
+	/* color y tipo de letra para la fecha*/
+	font-family: Verdana; color: #D74404;
+	font-size : 6pt;
+	font-weight: bold;
+}
+
+.MinecoWeb
+{
+	/* color y tipo de letra para las letras de www.mineco.gob.gt*/
+	font-family: Verdana; color: black;
+	font-size : 7pt;
+	font-weight: bold;
+}
+
+.Copyright
+{	
+	/* tipo de letra para el copyright y el optimizado*/
+	font-family: Verdana;
+	color: #93B2C0;
+	font-size : 8px;
+	font-weight: normal;
+	margin-left: 75px;
+}
+
+.Optimizado
+{
+	/*margen izquierdo para centrar texto de optimizado*/
+	margin-left: 105px;
+	font-family: Verdana;
+	color: #93B2C0;
+	font-size : 8px;
+	font-weight: normal;
+}
+
+
+.CajaDeBusqueda
+{	
+	/*caja de texto de busqueda (Google)*/
+	height: 11px;
+	font-size: 10px;
+}
+
+.ParrafosContactenos
+{	/*Identacion para los textos de contactenos*/
+	border-style:   none; 
+	padding-left:25px;
+}
+
+.BotonGoogle
+{
+	/*Estilo para el boton de busqueda Google*/
+	font-family: Verdana; color: #015584;
+	font-size : 9px;
+	border-style:   none; 
+}
+
+.tituloInversionista
+{
+	/*titulo para la subdivision de inversinistas, difiere en color*/
+	font-family: Verdana; font-size: 8pt; font-weight: bold; color:#008000;
+	padding-left: 5px;
+}
+
+.tituloInversionista2
+{
+	/*subtitulo para la subdivision de inversionistas, difiere en color*/
+	font-family: Verdana; font-size: 6pt; font-weight: bold; color:#006600;
+	padding-left: 10px; line-height: 20px;
+}
+
+.ContenidoServicios
+{
+	/*contenido de inversionistas, color gris; debe considerar removerse
+	el color una vez tengan links cada elemento*/
+    color: #8A9393;
+    padding-left: 10px;
+    line-height: 14px;
+}
+
+.InvestinGuatemala
+{
+	/*estilo del texto "Invest in Guatemala de la pagina de inversionistas"*/
+	font-family: Verdana; 
+	font-size: 6pt; 
+	color: #009900; 
+	font-weight:bold; 
+	font-style:italic;
+	text-decoration: underline;
+	text-align: center;
+}
+
+
+.titulo
+{
+	font-family: Verdana; font-size: 8pt; color: #015584; font-weight: bold;
+}
+
+.FondoOrganigrama2
+{
+	/*Fondo numero2 utilizado para el organigrama*/
+	background-image: url(Imagenes/FondoOrganigrama2.jpg);
+}
+
+.FONDO1
+{
+
+    background-image:url(Imagenes/FONDO1.JPG)
+
+}
+
+.CELESTE
+{
+
+    background-image:url(Imagenes/CELESTE2.JPG)
+
+}
+
+
+.tituloMinisterio
+{
+	/*Letra utilizada para el titulo de cada ministerio*/
+	
+	font-family: Verdana;  color: #336085; padding-bottom: 5px; padding-right: 5px;
+}
+
+.subtitulo
+{
+	/*subtitulos para las areas de Informacion General, Areas de Gestion, Servicios en Linea*/
+	font-family: Verdana; color: #015584;
+	font-size : 7pt;
+	font-weight: bold;
+	padding-left: 10px;
+	line-height: 20px;
+}
+
+.subtituloSinIdentacion
+{
+	font-family: Verdana; color: #015584;
+	font-size : 7pt;
+	font-weight: bold;
+	padding-left: 0px;
+}
+
+.FondoComercio
+{
+	/*Fondo para el div lue contiene el link para el chat*/
+	background-image: url(Imagenes/Ingresar.png);
+}
+
+.MinecoEnLinea
+{
+	/*Tipo de letra para el texto "MINECO EN LINEA" en ComercioExterior*/
+	font-family: Trebuchet MS;  font-size: 8pt; color: #CC6600; font-weight: bold;
+	padding-left: 15px;
+}
+
+.Ingresar
+{
+	/*Tipo de letra para el texto "Ingresar" en ComercioExterior*/
+	font-family: Verdana;  font-size: 6pt; color: #CC6600; text-decoration: underline;
+}
+
+.EventosFecha
+{
+	/*Para establecer el color gris al texto de fecha en eventos*/
+	color: #8A9393; 
+}
+
+.EventosNombre
+{
+	/*Para establecer el color gris al texto del titulo de los eventos*/
+	color: #8A9393; 
+}
+
+.TituloConsumidor
+{
+	/*Estilo para los titulos del area de Consumidor, difieren en color*/
+	font-family: Verdana; font-size: 8pt; font-weight: bold; color:#C67114;
+	padding-left: 5px;
+}
+.SubtitulosConsumidor
+{
+	/*Estilo para los subtitulos del area de Consumidor, difieren en color*/
+	font-family: Verdana; font-size: 6pt; font-weight: bold; color:#C67114;
+	padding-left: 10px;line-height: 20px;
+}
+
+.TituloProductor
+{
+	/*Estilo para los titulos del area de Productor, difieren en color*/
+	font-family: Verdana; font-size: 8pt; font-weight: bold; color:#6F651D;
+	padding-left: 5px;
+}
+
+.SubtitulosProductor
+{
+	/*Estilo para los subtitulos del area de Productor, difieren en color*/
+	font-family: Verdana; font-size: 6pt; font-weight: bold; color:#6F651D;
+	padding-left: 10px; line-height: 20px;
+}
+
+.TituloEmpresario
+{
+	/*Estilo para los titulos del area de Empresario, difieren en color*/
+	font-family: Verdana; font-size: 8pt; font-weight: bold; color:#7A4D54;
+}
+
+.SubtituloEmpresario
+{
+	/*Estilo para los subtitulos del area de Empresario, difieren en color*/
+	font-family: Verdana; font-size: 6pt; font-weight: bold; color:#7A4D54;
+	padding-left: 5px; line-height: 20px;
+}
+
+.TituloMedios
+{
+	/*Estilo para los titulos del area de Medios, difieren en color*/
+	font-family: Verdana; font-size: 8pt; font-weight: bold; color:#67686A;
+	padding-left: 5px;
+}
+
+.SubtituloMedios
+{
+	/*Estilo para los subtitulos del area de Medios, difieren en color*/
+	font-family: Verdana; font-size: 6pt; font-weight: bold; color:#67686A;
+	padding-left: 10px; line-height: 20px;
+}
+
+.LinksSalaPrensa
+{
+	/*Se utiliza para los links de sala de prensa, considerar remover una vez tengan
+	links definidos*/
+	color: #8A9393;
+	line-height: 19px;
+}
+
+.TitularesNoticias
+{
+	/*Se usa en la pagina principal*/
+	width: 188px; 
+	text-align:justify;
+	font-weight: normal;
+	line-height:14px;
+}
+
+.TitularesCapacitaciones
+{
+	/*Se usa en la pagina principal*/
+	width: 188px; 
+	text-align:justify;
+	font-weight: normal;
+	line-height:14px;
+}
+
+.TitularesEventos
+{
+	/*Se usa en la pagina principal*/
+	width: 188px; 
+	text-align:justify;
+	font-weight: normal;
+	line-height:14px;
+}
+
+
+.TitularesProgramas
+{
+	/*Se usa en la pagina principal*/
+	color: #015584; 
+	font-size : 7pt;
+	width: 188px; 
+	text-align:justify;
+	line-height:14px;
+}
+
+
+.DropDownList
+{
+    font-family: Arial;
+	font-size: 7pt;
+	font-weight: normal; 
+	padding-left:5px; 
+}
+.Button
+{
+    font-family: Arial;
+	font-size: 7pt;
+	font-weight: normal; 
+	border-color:#015584; 
+	border-width:1px;   	
+	width: 87px; 
+}
+.RadioButton
+{
+    font-family: Arial;
+	font-size: 7pt;
+	font-weight: normal; 
+	 margin-left:2; 
+	 Width:75px;
+}
+
+
+.ColumnaServiciosUsuarios
+{
+	border-right: #b5d2e1 1px solid; 
+	border-top: #b5d2e1 1px solid; 
+	border-left: #b5d2e1 1px solid; 
+	border-bottom: #b5d2e1 1px solid;
+	width:175px; 
+}
+
+.EncabezadoNoticia
+{ color:White;  
+}
+
+.FilasGridView
+{
+     color: Black;
+}
+
+.TituloCapacitacion
+{
+	font-family: Verdana; font-size: 8pt; color: #015584; font-weight: bold;
+}
+
+.Sitios
+{
+	color: #8A9393; text-decoration: underline;
+	font-size : 7pt;
+	line-height: 14px;
+}
+.TextAreaGrandes
+{ width:300px;
+  height:13px;   
+  vertical-align: middle; 
+}
+.TextArea
+{ 
+	font-family: Arial;
+	font-size: 7pt;
+	font-weight: normal;	
+}
+
+.TextAreaMedianos
+{ width:190px;
+  height:13px;   
+  vertical-align: middle;
+}
+.TextAreaPequeños
+{ width:80px;
+  height:13px;   
+  vertical-align: middle;
+  padding-right:80px; 
+}
+
+a:link {color: #8A9393;}
+
+a:visited {color: #8A9393 }
+
+.OpcionMenuPrimerNivel
+{
+ font-family: Arial;
+ font-size: 10px;
+ color:#FFFFFF;
+  font-weight:bold;
+  background-position:left;
+  background-image: url(imagenes/BotonMenuIzquierdo.jpg);
+  background-repeat: no-repeat;
+  padding-left:20px;
+}
+
+.OpcionMenuSegundoNivel
+{
+ font-family: Arial;
+ font-size: 9px;
+ padding-left:20px;
+ background-image: url(imagenes/BotonSubMenuIzquierdo.jpg);
+ background-repeat:no-repeat;
+ vertical-align:middle;
+ background-position:left;
+
+}
+.RadioButtonList
+{ width:320;
+  height:10px;
+  margin-right:25px; 
+  vertical-align: middle ;   	 
+}
+
+
+a.OpcionMenuSegundoNivel:link{color:#015584;}
+
+a.OpcionMenuSegundoNivel:visited{color:#015584;}
+
+a.OpcionMenuSegundoNivel:hover{color:#8A9393;}
+
+.AlineacionTextoCentroInformacion
+{
+  font-family: Arial;
+  text-align:justify; 
+  padding-right:20px;  
+  width:75%; 
+}
+.AlineacionTexto
+{
+  font-family: Arial;
+  font-size: 7pt; 
+  text-align:justify; 
+}
+
+.TDDropDownHodler
+{   padding-left:5px;
+    vertical-align:middle; 
+}
+
+.textoNoticia
+{
+	text-align:justify;
+}
+
+.imagenNoticia
+{
+	padding-left: 15px;
+	padding-bottom: 5px;
+}
+
+******************************
+
+/*Clases para la manipulacion de los estilos de la pagina de organigrama
+durante el AuthorMode y ReeditMode*/
+.divMinistrosAutores
+{
+	width: 255px; height: 160px; 
+	border-right: #b5d2e1 thin solid; 
+	border-top: #b5d2e1 thin solid; 
+	border-left: #b5d2e1 thin solid; 
+	border-bottom: #b5d2e1 thin solid;
+}
+
+.divMinistrosAutores2
+{
+	width: 255px; height: 225px; 
+	border-right: #b5d2e1 thin solid; 
+	border-top: #b5d2e1 thin solid; 
+	border-left: #b5d2e1 thin solid; 
+	border-bottom: #b5d2e1 thin solid;
+}
+
+.fondoMinistrosAutor
+{
+	background-image: url(Imagenes/FondoOrganigrama2.jpg);
+	height: 60px;
+	width: 240px;
+}
+
+.fondoMinistrosAutor2
+{
+	background-image: url(Imagenes/FondoOrganigrama.jpg);
+	height: 80px;
+	width: 240px;
+}
+
+
+/*Clases para la manipulacion de los estilos de la pagina de organigrama
+durante el PreviewMode y PublishedMode
+*/
+
+.divMinistrosPublicado
+{
+	width: 163px; height: 110px; 
+	border-right: #b5d2e1 thin solid; 
+	border-top: #b5d2e1 thin solid; 
+	border-left: #b5d2e1 thin solid; 
+	border-bottom: #b5d2e1 thin solid;
+}
+
+.divMinistrosPublicado2
+{
+	width: 134px; height: 135px;
+	border-right: #b5d2e1 thin solid; 
+	border-top: #b5d2e1 thin solid; 
+	border-left: #b5d2e1 thin solid; 
+	border-bottom: #b5d2e1 thin solid;
+}
+
+.fondoMinistrosPublicado
+{
+	background-image: url(Imagenes/FondoOrganigrama2.jpg);
+	height: 30px;
+	width: 154px;
+	padding-left: 5px;
+}
+
+.fondoMinistrosPublicado2
+{
+	background-image: url(Imagenes/FondoOrganigrama.jpg);
+	height: 40px;
+	width: 125px;
+	padding-left: 5px;
+}
+
+***********************************
+
+.nombresMinistros
+{
+	font-size: 6pt;  font-weight: bold; color: Black;
+}
+
+.nombresMinistros2
+{
+	font-size: 6pt;  font-weight: bold; color: Black; padding-left: 5px;
+}
+
+.imagenMinistros
+{
+	padding-left: 5px; padding-bottom: 100px;
+}
+
+/* Estilo de Control de Usuario de Enlaces */
+.VisorEnlaces
+{
+background-color:#f1f4fb;
+height:130px; 
+width: 220px; 
+overflow:auto; 
+padding-left:0px; 
+border-right:solid 1px #c2c9d1; 
+border-left:solid 1px #c2c9d1; 
+border-top:solid 1px #c2c9d1; 
+border-bottom:solid 1px #c2c9d1;
+}
+
+.EnlacesInversionista
+{
+padding-left: 5px; overflow:auto; width: 160px; height: 300px;
+}
+
+.EnlacesProductor
+{
+padding-left: 5px; overflow:auto; width: 160px; height: 150px;
+}
+
+.EnlacesMIPyME
+{
+padding-left: 5px; overflow:auto; width: 160px; height: 150px;
+}
+
+.EnlacesConsumidor
+{
+padding-left: 5px; overflow:auto; width: 160px; height: 300px;
+}
+
+.EnlacesMediosPrensa
+{
+padding-left: 5px; overflow:auto; width: 160px; height: 300px;
+}
+
+.EnlacesCrecimiento
+{
+	padding-left: 5px; overflow:auto; width: 160px; height: 100px;
+}
+
+.EnlacesComercio
+{
+	padding-left: 5px; overflow:auto; width: 160px; height: 150px;
+}
+
+.EnlacesInversion
+{
+	padding-left: 5px; overflow:auto; width: 160px; height: 200px;
+}
+
+.EnlacesVentanillaAgil
+{
+	padding-left: 10px; overflow:auto; width: 160px; height: 100px;
+}
+
+
+/*Estilo de Control de Usuario de Documentos */
+.VisorDeDocumentos
+{
+	width: 384px; 
+	border-right: #b5d2e1 1px solid; 
+	border-top: #b5d2e1 1px solid;
+    border-left: #b5d2e1 1px solid; 
+    border-bottom: #b5d2e1 1px solid;
+    height: 170px;
+}
+
+.MultiVisorDocumentos
+{
+	width: 384px; 
+	border-right: #b5d2e1 1px solid; 
+	border-top: #b5d2e1 1px solid;
+    border-left: #b5d2e1 1px solid; 
+    border-bottom: #b5d2e1 1px solid;
+    height: 90px;
+}
+
+/*Estilo usado en la portada del sitio en la lista de enlaces */
+.EnlacesPortada
+{
+	background-color:#f1f4fb;
+	height:130px; width: 180px; 
+	overflow:auto;  
+	padding-left:5px; 
+	border-right:solid 1px #c2c9d1; border-left:solid 1px #c2c9d1; border-top:solid 1px #c2c9d1; border-bottom:solid 1px #c2c9d1;
+}
+
+.VisorDocumentosParticipacion
+{
+	width: 380px; 
+	border-right: #b5d2e1 1px solid; 
+	border-top: #b5d2e1 1px solid;
+    border-left: #b5d2e1 1px solid; 
+    border-bottom: #b5d2e1 1px solid;
+    height: 170px;
+}
+.VisorEnlacesCentroInformacionyExpoNegocios
+{
+height:90px; 
+width: 165px; 
+overflow:auto; 
+padding-left:10px; 
+border-right:solid 0px #c2c9d1; 
+border-left:solid 0px #c2c9d1; 
+border-top:solid 0px #c2c9d1; 
+border-bottom:solid 0px #c2c9d1;
+}

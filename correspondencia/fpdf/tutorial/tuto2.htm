@@ -1,0 +1,54 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>ASEGGYS 2.0 - SISTEMA ALMACEN MINECO</title>
+<LINK TYPE="text/css" REL="stylesheet" HREF="../fpdf.css">
+</HEAD>
+<BODY>
+<H2>Cabecera, pie, salto de p�gina e imagen</H2>
+Aqu� tenemos un ejemplo de dos p�ginas con cabacera, pie de p�gina y logotipo:
+<BR>
+<BR>
+<TABLE WIDTH="100%" STYLE="color:#4040C0; border-style:ridge" BORDERCOLORLIGHT="#B0B0E0" BORDERCOLORDARK="#000000" BORDER="2" CELLPADDING=6 CELLSPACING=0 BGCOLOR="#F0F5FF"><TR><TD style="border-width:0px">
+<NOBR><code><font color="#000000">
+&lt;?php<br><font class="kw">require(</font><font class="str">'fpdf.php'</font><font class="kw">);<br><br>class </font>PDF <font class="kw">extends </font>FPDF<br><font class="kw">{<br></font><font class="cmt">//Cabecera de p�gina<br></font><font class="kw">function </font>Header<font class="kw">()<br>{<br>&nbsp;&nbsp;&nbsp;&nbsp;</font><font class="cmt">//Logo<br>&nbsp;&nbsp;&nbsp;&nbsp;</font>$<font class="kw">this-&gt;</font>Image<font class="kw">(</font><font class="str">'logo_pb.png'</font><font class="kw">,</font>10<font class="kw">,</font>8<font class="kw">,</font>33<font class="kw">);<br>&nbsp;&nbsp;&nbsp;&nbsp;</font><font class="cmt">//Arial bold 15<br>&nbsp;&nbsp;&nbsp;&nbsp;</font>$<font class="kw">this-&gt;</font>SetFont<font class="kw">(</font><font class="str">'Arial'</font><font class="kw">,</font><font class="str">'B'</font><font class="kw">,</font>15<font class="kw">);<br>&nbsp;&nbsp;&nbsp;&nbsp;</font><font class="cmt">//Movernos a la derecha<br>&nbsp;&nbsp;&nbsp;&nbsp;</font>$<font class="kw">this-&gt;</font>Cell<font class="kw">(</font>80<font class="kw">);<br>&nbsp;&nbsp;&nbsp;&nbsp;</font><font class="cmt">//T�tulo<br>&nbsp;&nbsp;&nbsp;&nbsp;</font>$<font class="kw">this-&gt;</font>Cell<font class="kw">(</font>30<font class="kw">,</font>10<font class="kw">,</font><font class="str">'Title'</font><font class="kw">,</font>1<font class="kw">,</font>0<font class="kw">,</font><font class="str">'C'</font><font class="kw">);<br>&nbsp;&nbsp;&nbsp;&nbsp;</font><font class="cmt">//Salto de l�nea<br>&nbsp;&nbsp;&nbsp;&nbsp;</font>$<font class="kw">this-&gt;</font>Ln<font class="kw">(</font>20<font class="kw">);<br>}<br><br></font><font class="cmt">//Pie de p�gina<br></font><font class="kw">function </font>Footer<font class="kw">()<br>{<br>&nbsp;&nbsp;&nbsp;&nbsp;</font><font class="cmt">//Posición: a 1,5 cm del final<br>&nbsp;&nbsp;&nbsp;&nbsp;</font>$<font class="kw">this-&gt;</font>SetY<font class="kw">(-</font>15<font class="kw">);<br>&nbsp;&nbsp;&nbsp;&nbsp;</font><font class="cmt">//Arial italic 8<br>&nbsp;&nbsp;&nbsp;&nbsp;</font>$<font class="kw">this-&gt;</font>SetFont<font class="kw">(</font><font class="str">'Arial'</font><font class="kw">,</font><font class="str">'I'</font><font class="kw">,</font>8<font class="kw">);<br>&nbsp;&nbsp;&nbsp;&nbsp;</font><font class="cmt">//N�mero de p�gina<br>&nbsp;&nbsp;&nbsp;&nbsp;</font>$<font class="kw">this-&gt;</font>Cell<font class="kw">(</font>0<font class="kw">,</font>10<font class="kw">,</font><font class="str">'Page '</font><font class="kw">.</font>$<font class="kw">this-&gt;</font>PageNo<font class="kw">().</font><font class="str">'/{nb}'</font><font class="kw">,</font>0<font class="kw">,</font>0<font class="kw">,</font><font class="str">'C'</font><font class="kw">);<br>}<br>}<br><br></font><font class="cmt">//Creación del objeto de la clase heredada<br></font>$pdf<font class="kw">=new </font>PDF<font class="kw">();<br></font>$pdf<font class="kw">-&gt;</font>AliasNbPages<font class="kw">();<br></font>$pdf<font class="kw">-&gt;</font>AddPage<font class="kw">();<br></font>$pdf<font class="kw">-&gt;</font>SetFont<font class="kw">(</font><font class="str">'Times'</font><font class="kw">,</font><font class="str">''</font><font class="kw">,</font>12<font class="kw">);<br>for(</font>$i<font class="kw">=</font>1<font class="kw">;</font>$i<font class="kw">&lt;=</font>40<font class="kw">;</font>$i<font class="kw">++)<br>&nbsp;&nbsp;&nbsp;&nbsp;</font>$pdf<font class="kw">-&gt;</font>Cell<font class="kw">(</font>0<font class="kw">,</font>10<font class="kw">,</font><font class="str">'Imprimiendo l�nea número '</font><font class="kw">.</font>$i<font class="kw">,</font>0<font class="kw">,</font>1<font class="kw">);<br></font>$pdf<font class="kw">-&gt;</font>Output<font class="kw">();<br></font>?&gt;
+</font>
+</code></NOBR></TD></TR></TABLE><P></P>
+<SCRIPT>
+<!--
+if(document.location.href.indexOf('http:')==0)
+{
+document.write("<P CLASS='demo'><A HREF='tuto2.php' TARGET='_blank' CLASS='demo'>[Demo]</A></P>");
+}
+//-->
+</SCRIPT>
+Este ejemplo hace uso de los m�todos <A HREF='../doc/header.htm'>Header()</A> y <A HREF='../doc/footer.htm'>Footer()</A> para procesar las
+cabeceras y pies de p�ginas. Se llaman autom�ticamente. Ya existen en la clase FPDF
+origuinal, pero no hacen nada. Por ello, tenemos que heredar la clase y sobreescribirlos.
+<BR>
+<BR>
+El logotipo se imprime con el m�todo <A HREF='../doc/image.htm'>Image()</A> especificando su esquina superior
+izquierda y su anchura. La altura se calcula autom�ticamente respetando las proporciones
+de la imagen.
+<BR>
+<BR>
+Para imprimir el número de p�gina, se le pasa un valor nulo (null) como ancho de la celda. Eso
+significa que la celda se extender� hasta el margen derecho de la p�gina; puede ser �til centrar
+el texto. El número actual de la p�gina se devuelve por el m�todos <A HREF='../doc/pageno.htm'>PageNo()</A>;
+mientras que el número total de p�ginas se obtiene mediante un valor especial de
+<TT>{nb}</TT> que ser� sustituido cuando se cierre el documento (suponiendo que
+usted antes utilizara <A HREF='../doc/aliasnbpages.htm'>AliasNbPages()</A>).
+<BR>
+Observe el uso del m�todo <A HREF='../doc/sety.htm'>SetY()</A> que le permite especificar la posición en una
+ubicación absoluta respecto del origen de coordenadas de la p�gina, empezando por
+el principio o por el final.
+<BR>
+<BR>
+Otra caracter�stica interesante se usa en el ejemplo: el salto autom�tico de p�gina. Tan
+pronto como una celda cruza el l�mite m�ximo de la p�gina (a 2 cm del final, por defecto),
+se ejecuta un salto y se recupera la fuente. Aunque la cabecera y el pie usan su propia fuente
+(Arial), el cuerpo del documento continua con Times. Este mecanismo autom�tico de recuperación
+tambión se aplica a los colores y al ancho de l�nea. El l�mite que fuerza los saltos de p�gina
+puede establecerse con <A HREF='../doc/setautopagebreak.htm'>SetAutoPageBreak()</A>.
+</BODY>
+</HTML>

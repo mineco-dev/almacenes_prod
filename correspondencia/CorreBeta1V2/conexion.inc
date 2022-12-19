@@ -1,0 +1,8 @@
+<?php
+	/* CONFIGURACION DE PARAMETROS GENERALES DE CONEXION */
+	$SERVIDOR="ecortes";
+	$BASE_DATOS="RRHH";
+	$USUARIO="";
+	$PASSWORD="";	
+	$datos1[][]="";
+?>

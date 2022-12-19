@@ -1,0 +1,96 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>ASEGGYS 2.0 - SISTEMA ALMACEN MINECO</title>
+<LINK TYPE="text/css" REL="stylesheet" HREF="../fpdf.css">
+</HEAD>
+<BODY>
+<H2>Ejemplo b�sico</H2>
+Comencemos con el cl�sico ejemplo:
+<BR>
+<BR>
+<TABLE WIDTH="100%" STYLE="color:#4040C0; border-style:ridge" BORDERCOLORLIGHT="#B0B0E0" BORDERCOLORDARK="#000000" BORDER="2" CELLPADDING=6 CELLSPACING=0 BGCOLOR="#F0F5FF"><TR><TD style="border-width:0px">
+<NOBR><code><font color="#000000">
+&lt;?php<br><font class="kw">require(</font><font class="str">'fpdf.php'</font><font class="kw">);<br><br></font>$pdf<font class="kw">=new </font>FPDF<font class="kw">();<br></font>$pdf<font class="kw">-&gt;</font>AddPage<font class="kw">();<br></font>$pdf<font class="kw">-&gt;</font>SetFont<font class="kw">(</font><font class="str">'Arial'</font><font class="kw">,</font><font class="str">'B'</font><font class="kw">,</font>16<font class="kw">);<br></font>$pdf<font class="kw">-&gt;</font>Cell<font class="kw">(</font>40<font class="kw">,</font>10<font class="kw">,</font><font class="str">'�Hola, Mundo!'</font><font class="kw">);<br></font>$pdf<font class="kw">-&gt;</font>Output<font class="kw">();<br></font>?&gt;
+</font>
+</code></NOBR></TD></TR></TABLE><P></P>
+<SCRIPT>
+<!--
+if(document.location.href.indexOf('http:')==0)
+{
+document.write("<P CLASS='demo'><A HREF='tuto1.php' TARGET='_blank' CLASS='demo'>[Demo]</A></P>");
+}
+//-->
+</SCRIPT>
+Despu�s de incluir el fichero de la clase, creamos el objeto FDPF.
+El constructor <A HREF='../doc/fpdf.htm'>FPDF()</A> se usa aqu� con sus valores por defecto: las p�ginas son de tama�o
+a4 alargado y la unidad de medida es el mil�metro. Se podr�a haber declarado expl�citamente
+con:
+<BR>
+<BR>
+<TABLE WIDTH="100%" STYLE="color:#4040C0; border-style:ridge" BORDERCOLORLIGHT="#B0B0E0" BORDERCOLORDARK="#000000" BORDER="2" CELLPADDING=6 CELLSPACING=0 BGCOLOR="#F0F5FF"><TR><TD style="border-width:0px">
+<NOBR><code><font color="#000000">
+$pdf<font class="kw">=new </font>FPDF<font class="kw">(</font><font class="str">'P'</font><font class="kw">,</font><font class="str">'mm'</font><font class="kw">,</font><font class="str">'A4'</font><font class="kw">);</font><br>
+</font>
+</code></NOBR></TD></TR></TABLE><P></P>
+Es posible usar el formato apaisado(<TT>L</TT>), otros formatos de p�gina (como <TT>Carta</TT> y
+<TT>Legal</TT>) y otras unidades de medida (<TT>pt</TT>, <TT>cm</TT>, <TT>in</TT>).
+<BR>
+<BR>
+Por el momento no hemos creado ninguna p�gina, as� que
+a�adiremos una con <A HREF='../doc/addpage.htm'>AddPage()</A>. El origen de coordenadas está en la esquina superior izquierda
+y la posición actual está por defecto situada a 1 cm de los bordes; los m�rgenes pueden cambiarse
+con <A HREF='../doc/setmargins.htm'>SetMargins()</A>.
+<BR>
+<BR>
+Antes de que podamos imprimir texto, es obligatorio escoger una fuente con <A HREF='../doc/setfont.htm'>SetFont()</A>, si no, el
+documento no ser� v�lido. Escogemos Arial en negrita de tama�o 16:
+<BR>
+<BR>
+<TABLE WIDTH="100%" STYLE="color:#4040C0; border-style:ridge" BORDERCOLORLIGHT="#B0B0E0" BORDERCOLORDARK="#000000" BORDER="2" CELLPADDING=6 CELLSPACING=0 BGCOLOR="#F0F5FF"><TR><TD style="border-width:0px">
+<NOBR><code><font color="#000000">
+$pdf<font class="kw">-&gt;</font>SetFont<font class="kw">(</font><font class="str">'Arial'</font><font class="kw">,</font><font class="str">'B'</font><font class="kw">,</font>16<font class="kw">);</font><br>
+</font>
+</code></NOBR></TD></TR></TABLE><P></P>
+Podr�amos haber especificado it�lica con I, subrayado con U o normal con una cadena vac�a (o
+cualquier combinación de las anteriores). Observe que el tama�o de la fuente se detemina en puntos,
+no en mil�metros (ni en cualquier otra unidad establecida por el usuario); es la �nica excepción.
+Las otras fuentes incorporadas son Times, Courier, Symbol y ZapfDingbats.
+<BR>
+<BR>
+Ahora podemos imprimir una celda con <A HREF='../doc/cell.htm'>Cell()</A>. Una celda es una superficie rectangular, con
+borde si se quiere, que contiene texto. Se imprime en la posición actual. Especificamos sus
+dimensiones, el texto (centrado o alineado), si queremos dibujar o no los bordes, y d�nde se
+ubicar� la posición actual despu�s de imprimir la celda (a la derecha, debajo o al principio de la
+siguiente l�nea). Para a�adir el borde, deberemos hacer esto:
+<BR>
+<BR>
+<TABLE WIDTH="100%" STYLE="color:#4040C0; border-style:ridge" BORDERCOLORLIGHT="#B0B0E0" BORDERCOLORDARK="#000000" BORDER="2" CELLPADDING=6 CELLSPACING=0 BGCOLOR="#F0F5FF"><TR><TD style="border-width:0px">
+<NOBR><code><font color="#000000">
+$pdf<font class="kw">-&gt;</font>Cell<font class="kw">(</font>40<font class="kw">,</font>10<font class="kw">,</font><font class="str">'�Hola, Mundo!'</font><font class="kw">,</font>1<font class="kw">);</font><br>
+</font>
+</code></NOBR></TD></TR></TABLE><P></P>
+Para a�adir una nueva celda a continuación, con el texto centrado e ir a la siguiente l�nea,
+escribiremos:
+<BR>
+<BR>
+<TABLE WIDTH="100%" STYLE="color:#4040C0; border-style:ridge" BORDERCOLORLIGHT="#B0B0E0" BORDERCOLORDARK="#000000" BORDER="2" CELLPADDING=6 CELLSPACING=0 BGCOLOR="#F0F5FF"><TR><TD style="border-width:0px">
+<NOBR><code><font color="#000000">
+$pdf<font class="kw">-&gt;</font>Cell<font class="kw">(</font>60<font class="kw">,</font>10<font class="kw">,</font><font class="str">'Hecho con FPDF.'</font><font class="kw">,</font>0<font class="kw">,</font>1<font class="kw">,</font><font class="str">'C'</font><font class="kw">);</font><br>
+</font>
+</code></NOBR></TD></TR></TABLE><P></P>
+Nota: el salto de l�nea puede provocarse tambión mediante <A HREF='../doc/ln.htm'>Ln()</A>.
+Este m�todo le permite especificar adem�s la altura del salto.
+<BR>
+<BR>
+Finalmente, el documento se cierra y se env�a al navegador con <A HREF='../doc/output.htm'>Output()</A>.
+Tambión podr�amos haberlo guardado en un fichero pasando como par�metro el nombre
+del archivo.
+<BR>
+<BR>
+Cuidado: en caso de que el PDF se env�e al navegador, nada m�s debe enviarse, ni antes
+ni despu�s (el m�s m�nimo espacio en blanco o retorno de carro tambión cuenta). Si se env�a
+alg�n dato antes, obtendr� el mensaje de error: "Some data has already been output to browser, can't send PDF file".
+Si se env�a despu�s, su navegador puede que muestre �nicamente una p�gina en blanco.
+</BODY>
+</HTML>

@@ -1,0 +1,260 @@
+.calendario{
+	border: 1pt solid #112d6c;
+	width:190px;
+}
+
+.calendario .Selected{
+	font-size:9pt;
+	font-family:Arial;
+	font-weight:bold;
+	color: white;
+	background-color:red;
+	border:2px solid white;
+	cursor:hand;
+	
+}
+
+.calendario .SelectedOver{
+	font-size:9pt;
+	font-family:Arial;
+	font-weight:bold;
+	color: white;
+	background-color:#112d6c;
+	border:2px solid white;
+	cursor:hand;
+	
+}
+
+.calendario .SelectedOutOfRange{
+	font-size:9pt;
+	font-family:Arial;
+	color: 939393;
+	background-color:#FFFFFF;
+	border:2px solid #FFFFFF;
+	cursor:default;
+	font-weight:bold;
+	text-decoration: line-through;
+	
+}
+
+.calendario .Weekend{
+	font-size:9pt;
+	font-family:Arial;
+	color: #000000;
+	background-color:#e0e0e0;
+	border:2px solid #e0e0e0;
+	cursor:hand;
+	font-weight:bold;
+	
+}
+.calendario .WeekendOver{
+	font-size:9pt;
+	font-family:Arial;
+	color: #112d6c;
+	background-color:#e0e0e0;
+	border:2px solid #112d6c;
+	cursor:hand;
+	font-weight:bold;
+	
+}
+.calendario .WeekendOutOfRange{
+	font-size:9pt;
+	font-family:Arial;
+	color: #939393;
+	background-color:#e0e0e0;
+	border:1pt solid #e0e0e0;
+	cursor:default;
+	font-weight:bold;
+	text-decoration: line-through;
+	
+}
+.calendario .text{
+	font-size:9pt;
+	font-family:Arial;
+	color: #000000;
+	background-color:#FFFFFF;
+	border:2px solid #FFFFFF;
+	font-weight:bold;
+	cursor:default;
+	
+}
+.calendario .Celda{
+	font-size:9pt;
+	font-family:Arial;
+	color: #000000;
+	background-color:#FFFFFF;
+	border:2px solid #FFFFFF;
+	font-weight:bold;
+	cursor:hand;
+	
+}
+.calendario .CeldaOver{
+	font-size:9pt;
+	font-family:Arial;
+	color: #112d6c;
+	background-color:#FFFFFF;
+	border:2px solid #112d6c;
+	font-weight:bold;
+	cursor:hand;
+	
+}
+
+.calendario .CeldaOutOfRange{
+	font-size:9pt;
+	font-family:Arial;
+	color: #939393;
+	background-color:#FFFFFF;
+	border:2px solid #FFFFFF;
+	font-weight:bold;
+	cursor:default;
+	text-decoration: line-through;
+	
+}
+
+.calendario .OtroMesCelda{
+	font-size:9pt;
+	font-family:Arial;
+	color: #939393;
+	background-color:#FFFFFF;
+	border:2px solid #FFFFFF;
+	font-weight:bold;
+	cursor:hand;
+	
+}
+
+.calendario .OtroMesCeldaOver{
+	font-size:9pt;
+	font-family:Arial;
+	color: #112d6c;
+	background-color:#FFFFFF;
+	border:2px solid #112d6c;
+	font-weight:bold;
+	cursor:hand;
+	
+}
+
+.calendario .OtroMesCeldaOutOfRange{
+	font-size:9pt;
+	font-family:Arial;
+	color: #939393;
+	background-color:#FFFFFF;
+	border:2px solid #FFFFFF;
+	font-weight:bold;
+	cursor:default;
+	text-decoration: line-through;
+	
+}
+
+.calendario .OtroMesWeekend{
+	font-size:9pt;
+	font-family:Arial;
+	color: #939393;
+	background-color:#e0e0e0;
+	border:2px solid #e0e0e0;
+	cursor:hand;
+	font-weight:bold;
+	
+}
+
+.calendario .OtroMesWeekendOver{
+	font-size:9pt;
+	font-family:Arial;
+	color: #112d6c;
+	background-color:#e0e0e0;
+	border:2px solid #112d6c;
+	cursor:hand;
+	font-weight:bold;
+	
+}
+
+.calendario .OtroMesWeekendOutOfRange{
+	font-size:9pt;
+	font-family:Arial;
+	color: #939393;
+	background-color:#e0e0e0;
+	border:2px solid #e0e0e0;
+	cursor:default;
+	font-weight:bold;
+	text-decoration: line-through;
+	
+}
+
+
+.calendario .header{
+	font-size:8pt;
+	font-family:Arial;
+	font-weight:bold;
+	color: white;
+	background-color:#112d6c;
+	font-weight:bold;
+}
+
+.calendario .footer{
+	font-size:9pt;
+	font-family:Arial;
+	font-weight:bold;
+	color: white;
+	background-color:#112d6c;
+	cursor:hand;
+}
+
+.calendario .footerOver{
+	font-size:9pt;
+	font-family:Arial;
+	font-weight:bold;
+	color: yellow;
+	background-color:#112d6c;
+	cursor:hand;
+}
+
+.calendario .footerOutOfRange{
+	font-size:9pt;
+	font-family:Arial;
+	font-weight:bold;
+	color: white;
+	background-color:#112d6c;
+	cursor:default;
+}
+
+
+.calendario .headerDia{
+	font-size:8pt;
+	font-family:Arial;
+	font-weight:bold;
+	color: #112d6c;
+	background-color:#FFFFFF;
+	border:1pt solid;
+	border-color:#FFFFFF #FFFFFF #000000 #FFFFFF;
+	cursor:default;
+}
+
+.calendario .headerDiaWeekend{
+	font-size:8pt;
+	font-family:Arial;
+	font-weight:bold;
+	color: #112d6c;
+	background-color:#e0e0e0;
+	border:1pt solid;
+	border-color:#e0e0e0 #e0e0e0 #000000 #e0e0e0;
+	cursor:default;
+}
+
+.calendario .selectOptionsMonth{
+	font-size:7pt;
+	font-family:Arial;
+	font-weight:bold;
+	background-color:#FFFFFF;
+	color: #000000;
+	width:100px;
+}
+.calendario .selectOptionsYear{
+	font-size:7pt;
+	font-family:Arial;
+	font-weight:bold;
+	background-color:#FFFFFF;
+	color: #000000;
+}
+.calendario .bar{
+	border:2px solid #112d6c;
+	background-color:white;
+}
