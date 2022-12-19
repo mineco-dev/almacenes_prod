@@ -260,7 +260,7 @@ header, footer, nav, aside {
 
  conectardb($almacen);
 
-  $queryControl = "use almacen_nuevo_qa
+  $queryControl = "use almacen_nuevo
 select CONVERT(nvarchar(10), k.fecha, 103) as fecha,
 CONVERT(nvarchar(10), k.fecha, 108) as hora,
  m.tipo_movimiento,
@@ -293,7 +293,7 @@ on k.id_dependencia = d.iddireccion
 	$SaldoControlInicial = $rowControl[7];
  }
  
- $query = "use almacen_nuevo_qa
+ $query = "use almacen_nuevo
 select CONVERT(nvarchar(10), k.fecha, 103) as fecha,
 CONVERT(nvarchar(10), k.fecha, 108) as hora,
  m.tipo_movimiento,

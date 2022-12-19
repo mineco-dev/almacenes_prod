@@ -39,7 +39,7 @@ $objDB = mssql_select_db("almacen");
 					$categoria=$_SESSION["categoria"];	
 					$subcategoria=$_SESSION["subcategoria"];
 					
-$Fields="use almacen_nuevo_qa 
+$Fields="use almacen_nuevo 
 		select producto
 			 from cat_producto
 				where 
@@ -54,7 +54,7 @@ $Fields="use almacen_nuevo_qa
 			print($nombre_producto);
 		}
 		
-$Fields2="use almacen_nuevo_qa 
+$Fields2="use almacen_nuevo 
 select 
 saldo
 from tb_kardex
@@ -76,7 +76,7 @@ and codigo_tipo_movimiento = 1)";
 
 
 
-$strSQL = "use almacen_nuevo_qa 
+$strSQL = "use almacen_nuevo 
 select CONVERT(nvarchar(20), k.fecha, 103) as fecha,
 m.tipo_movimiento,
 k.no_despacho, 

@@ -39,7 +39,7 @@ require('conexion.php');
 					$categoria=$_SESSION["categoria"];	
 					$subcategoria=$_SESSION["subcategoria"];*/
 
-	$Fields="use almacen_nuevo_qa 
+	$Fields="use almacen_nuevo 
 		select producto
 			 from cat_producto
 				where 
@@ -60,7 +60,7 @@ require('conexion.php');
 					and codigo_subcategoria = 600";-->	
 <?PHP 	
 	//conectardb($almacen);
-	$Fields2="use almacen_nuevo_qa select 
+	$Fields2="use almacen_nuevo select 
 saldo
 from tb_kardex
 where 
@@ -84,7 +84,7 @@ and codigo_tipo_movimiento = 1)";
 		
 		
 		
-		$Fields3="use almacen_nuevo_qa 
+		$Fields3="use almacen_nuevo 
 		select observaciones
 		from tb_kardex
 				where 
@@ -162,7 +162,7 @@ and codigo_tipo_movimiento = 1)";-->
 					$subcategoria=$_SESSION["subcategoria"];*/
 
 $por_pagina="40";
-$query = "use almacen_nuevo_qa 
+$query = "use almacen_nuevo 
 select CONVERT(nvarchar(20), k.fecha, 103) as fecha,
 m.tipo_movimiento,
 k.no_despacho, 

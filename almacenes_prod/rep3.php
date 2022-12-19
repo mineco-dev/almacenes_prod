@@ -275,8 +275,8 @@ if (isset($_SESSION["categoria"])) {
     
     conectardb($almacen);
     
-    $query = "-- use almacen_nuevo_qa 
-		use almacen_nuevo_qa
+    $query = "-- use almacen_nuevo 
+		use almacen_nuevo
 		select CONVERT(nvarchar(10), k.fecha, 103) as fecha,
 		CONVERT(nvarchar(10), k.fecha, 108) as hora,
 		m.tipo_movimiento,

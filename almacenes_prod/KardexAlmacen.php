@@ -165,7 +165,7 @@ $select3 = 1;
 					$subcategoria=$_SESSION["subcategoria"];
 conectardb($almacen);
  
- $query = "use almacen_nuevo_qa 
+ $query = "use almacen_nuevo 
 select CONVERT(nvarchar(10), k.fecha, 103) as fecha, CONVERT(nvarchar(10), k.fecha, 108) as hora, 
 m.tipo_movimiento, k.no_despacho, k.no_ingreso, k.entrada, k.salida, k.saldo, k.costo_promedio, 
 k.costo_factura, costo_movimiento, costo_total, d.nombre from tb_kardex k inner join cat_tipo_movimiento m 

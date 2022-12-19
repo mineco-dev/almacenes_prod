@@ -3,7 +3,7 @@
     $con=conectar();
 
 
-     $query = " use almacen_nuevo_qa 
+     $query = " use almacen_nuevo 
    					select distinct(c.codigo_categoria), c.categoria 
    					from cat_subcategoria s
     					inner join cat_categoria c

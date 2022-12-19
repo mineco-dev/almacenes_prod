@@ -4,7 +4,7 @@
     ob_start();
 
     require_once('../../../connection/conectionPool.php');
-    $conn = new Conexion('almacen_nuevo_qa');
+    $conn = new Conexion('almacen_nuevo');
     $conexion = $conn->Conectar();
 
     // require("../../../includes/funciones.php");

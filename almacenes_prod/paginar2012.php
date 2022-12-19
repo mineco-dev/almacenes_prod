@@ -40,7 +40,7 @@ if ($_REQUEST["select1"]!="0")
 					$subcategoria=$_SESSION["subcategoria"];
 
 	//obtener el nombre del producto
-	$Fields="use almacen_nuevo_qa 
+	$Fields="use almacen_nuevo 
 		select producto
 			 from cat_producto
 				where 
@@ -59,7 +59,7 @@ if ($_REQUEST["select1"]!="0")
   
 <?PHP 	
 	//obtener el saldo inicial del producto
-	$Fields2="use almacen_nuevo_qa select 
+	$Fields2="use almacen_nuevo select 
 saldo
 from tb_kardex
 where 
@@ -77,7 +77,7 @@ and codigo_tipo_movimiento = 1)";
 		}
 		
 		//obtener las observaciones INVENTARIO INICIAL SEGUN ACTA No. 38-2010, DE FECHA 12/11/2010 DE UDAI
-		$Fields3="use almacen_nuevo_qa 
+		$Fields3="use almacen_nuevo 
 		select observaciones
 		from tb_kardex
 				where 
@@ -150,7 +150,7 @@ if ($_REQUEST["select1"]!="0")
 					$subcategoria=$_SESSION["subcategoria"];
 
 $por_pagina="1500";
-$query = "use almacen_nuevo_qa 
+$query = "use almacen_nuevo 
 select CONVERT(nvarchar(20), k.fecha, 103) as fecha,
 m.tipo_movimiento,
 k.no_despacho, 
