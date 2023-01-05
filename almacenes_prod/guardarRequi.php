@@ -33,6 +33,7 @@
 		if (isset($_SESSION["ingreso"]) && $Accion == 0)
 		{
 			conectardb($almacen);
+			
 			$solicitante=$nombre[0][2];
 			$s = $_SESSION["nombre[0][2]"];
 			$nombre_usuario=$_SESSION["user_name"];

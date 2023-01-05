@@ -45,7 +45,7 @@ $empresa = ($_POST['cbo_tipo_empresa']);
 // 	return s;
 // }
 
-function verificar (form) {
+/*function verificar (form) {
 	try
 	{
 		if (form['pregunta'].value.length == 0)
@@ -59,7 +59,7 @@ function verificar (form) {
 	{
 		alert("Debe ingresar la descripción de la información a solicitar");
 	}
-}
+}*/
 
 function imprimir()
 {
@@ -118,7 +118,7 @@ if (window.document.form1.opnacionalidad[0].checked)
                   <td colspan="2">&nbsp;</td>
                   <tr>
                    <td valign="top">&nbsp;</td>
-                   <td>Solicitante:
+                   <td>Solicitante.:
                     <td colspan="2">
                       <a   onclick="buscar=window.open('busca_persona.php?tipo=nombre&posi=0','Buscar','width=650,height=525,menubar=no,scrollbars=yes,toolbar=no,location=no,directories=no,resizable=no,top=100,left=250'); return false;">
                        <input name="nombre[0][0]" type="text" id="textfield3" value="[CLIC AQUI PARA SELECCIONAR SOLICITANTE]" size="55" /> <button>...</button>
@@ -336,7 +336,8 @@ if ($empresa == "5") {
 </table>
 <p align="center">
   <input type="hidden" id="T_Accion" name="T_Accion" value="0">
-  <input name="cmd_guardar" type="button" onClick="validar(this.form)"  class="boton grey" id="cmd_guardar" value="Mandar a Aprobacion" >
+  <!-- <input name="cmd_guardar" type="button" onClick="validar(this.form)"  class="boton grey" id="cmd_guardar" value="Mandar a Aprobacion" >-->
+  <input name="cmd_guardar" type="submit"   class="boton grey" id="cmd_guardar" value="Mandar a Aprobacion" >
  <!-- <input name="Temporal" type="button"   onClick="validar(this.form)" class="boton grey" id="Temporal" value="Guardar" > -->
 
 </p>
